@@ -12,17 +12,50 @@
             <!--nav code-->
             <nav>
         <header>
-            <h1 class="ti-15">Investment Market</h1>
-        </header>
+                <h1 class="ti-15">Investment Market <a class="pointer pull-right" onclick="logout()" title="Logout"><span id="backHome"><small>Logout</small></a></span></h1>
+            </header>
         </nav>
         <!--end-->
 
         <!--main code-->
         <main>
-            <section>
-                <div class="col-12 clearfix ti-15">
+            <section id="mobile">
+                <div class="col-6 offset-3 clearfix ti-15">
 
-         <h2>Gross Income Screen</h2>
+            <!--profitLoss form code-->
+            <div id="profitLossForm">
+                    <h2>Gross Income</h2>
+                    <hr/>
+                    <div class="form-group clearfix"></div>
+                        <form name="signupForm" novalidate>
+                            <div class="form-group">
+                                <label for="accountNo">Account No.</label>
+                                <input type="text" class="form-control" name="accountNo" id="accountNo" placeholder="Account No." required />
+                            </div>
+                            <div class="form-group">
+                                    <label for="amount">Amount</label>
+                                    <input type="number" class="form-control" onchange="finalAmountShow()" min="0" name="amount" id="amount" placeholder="Amount" required />
+                                </div>
+                                <div class="form-group">
+                                        <label for="period">Period (in months)</label>
+                                        <input type="number" class="form-control" onchange="finalAmountShow()" min="0" name="period" id="period" placeholder="Period" required />
+                                    </div>
+                            <div class="form-group">
+                                <label for="interest">Interest (in %)</label>
+                                <input type="number" class="form-control" onchange="finalAmountShow()" min="0" name="interest" id="interest" placeholder="Interest" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="finalAmount">Final Amount</label>
+                                <input type="number" class="form-control" onchange="finalAmountShow()" min="0" name="finalAmount" id="finalAmount" placeholder="Final Amount" required />
+                            </div>
+                            <div class="form-group text-danger" id="profitLossError"></div>
+                            <div class="form-group">
+                                <button type="reset" class="btn btn-danger">Reset</button>
+                                <button type="button" class="btn btn-success" onclick="confirmSubmit()">Confirm</button>
+                            </div>
+                        </form>
+                        </div>
+            <!--end-->
 
         </div>
                 
@@ -34,7 +67,7 @@
         <!--footer code-->
         <footer>
             <section>
-                <div class="col-12 clearfix">
+                <div class="col-12 clearfix" id="mobile">
                     <div class="form-group clearfix">
                     <div class="col-4 ti-15">
                         <h3>Dashboard</h3>

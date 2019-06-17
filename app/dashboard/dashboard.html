@@ -1,0 +1,114 @@
+<!doctype html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Udemy Javascript</title>
+        <link rel="stylesheet" href="../../css/style.css">
+        <noscript>No Javascript Access in your browser.</noscript>
+    </head>
+    <body>
+        <div class="container">
+            <!--nav code-->
+            <nav>
+        <header>
+            <h1 class="ti-15">Investment Market <a class="pointer pull-right" onclick="logout()" title="Logout"><span id="backHome"><small>Logout</small></a></span></h1>
+            
+        </header>
+        </nav>
+        <!--end-->
+
+        <!--main code-->
+        <main>
+            <section>
+                <div class="col-12 clearfix" id="mobile">
+                    <div class="form-group clearfix"></div>
+                    <div class="col-3 form-group">
+                       <div class="fix-dashboard p-lr-10" onclick="investmentview()"><h2>Investment</h2></div>
+                    </div>
+
+                    <div class="col-3 form-group">
+                            <div class="fix-dashboard p-lr-10" onclick="profitLossview()"><h2>Profit & Loss</h2></div>
+                        </div>
+
+                        <div class="col-3 form-group">
+                                <div class="fix-dashboard p-lr-10" onclick="totalGainView()"><h2>Total Gain</h2></div>
+                            </div>
+
+                            <div class="col-3 form-group">
+                                    <div class="fix-dashboard p-lr-10" onclick="totalLossView()"><h2>Total Loss</h2></div>
+                                </div>
+
+                                <div class="col-3 form-group">
+                                        <div class="fix-dashboard p-lr-10" onclick="grossIncomeView()"><h2>Gross Income</h2></div>
+                                    </div>
+
+                                    <div class="col-3 form-group">
+                                            <div class="fix-dashboard p-lr-10" onclick="grossLossView()"><h2>Gross Loss</h2></div>
+                                        </div>
+
+                                        <div class="col-3 form-group">
+                                                <div class="fix-dashboard p-lr-10" onclick="balancesheetView()"><h2>Balancesheet</h2></div>
+                                            </div>
+
+        </div>
+                
+            </section>
+        </main>
+        <!--end-->
+
+
+ 
+        <!--footer code-->
+        <footer>
+                <section>
+                    <div class="col-12 clearfix" id="mobile">
+                        <div class="form-group clearfix">
+                        <div class="col-4 ti-15">
+                            <h3>Dashboard</h3>
+                            <ul class="list-unstyled">
+                                <li><a class="pointer" onclick="defaultHome()()">Home</a></li>
+                                <li><a class="pointer" onclick="defaultHome()()">Service</a></li>
+                                <li><a class="pointer" onclick="defaultHome()()">About</a></li>
+                                <li><a class="pointer" onclick="defaultHome()()">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4 ti-15">
+                                <h3>Marketing Plan</h3>
+                                <ul class="list-unstyled">
+                                    <li><a class="pointer" onclick="investmentview()">Investment</a></li>
+                                    <li><a class="pointer" onclick="profitLossview()">Profit & Loss</a></li>
+                                    <li><a class="pointer" onclick="totalGainView()">Total Gain</a></li>
+                                    <li><a class="pointer" onclick="totalLossView()">Total Loss</a></li>
+                                    <li><a class="pointer" onclick="grossIncomeView()">Gross Income</a></li>
+                                    <li><a class="pointer" onclick="grossLossView()">Gross Loss</a></li>
+                                    <li><a class="pointer" onclick="balancesheetView()">Balancesheet</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-4 ti-15">
+                                    <h3>Socail Icon</h3>
+                                    <ul class="list-unstyled">
+                                        <li><a class="pointer" title="Facebook">Facebook</a></li>
+                                        <li><a class="pointer" title="Twitter">Twitter</a></li>
+                                        <li><a class="pointer" title="Gmail">Gmail</a></li>
+                                        <li><a class="pointer" title="Instagram">Instagram</a></li>
+                                        <li><a class="pointer" title="Whatsapp">Whatsapp</a></li>
+                                    </ul>
+                                </div>
+                                <div class="clearfix"></div>
+                    </div>
+                    <hr />
+                    <br/>
+                                <div class="form-group text-center">
+                                    &copy; Copyright by investmentmaret.com. All right reserved.
+                                </div>
+                    </div>
+                </section>
+            </footer>
+    <!--end-->
+
+    </div>
+    <script src="../../js/app.js"></script>
+    <script src="dashboard.js"></script>
+    </body>
+</html>

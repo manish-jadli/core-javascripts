@@ -1,0 +1,249 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+html,body{
+    background:#170d6e;
+    font-family: cursive;
+}
+.container{
+    width:90%;
+    display: grid;
+    margin: 0 auto;
+    background:#fff;
+    widows: 100vw;
+    min-height: 100%;
+    box-shadow: 0px 0px 15px #170d6e;
+}
+
+.col-12,.col-11,.col-10,.col-9,.col-8,.col-7,.col-6,.col-5,.col-4,.col-3,.col-2,.col-1{
+    float:left;
+    /* padding:0px 15px; */
+}
+
+.col-1{width: 8.33%;}
+.col-2{width:16.66%}
+.col-3{width: 25%}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width:66.66%}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width:91.66%;}
+.col-12{width: 100%;}
+
+.offset-1{margin-left: 8.33%;}
+.offset-2{margin-left:16.66%}
+.offset-3{margin-left: 25%}
+.offset-4{margin-left:33.33%;}
+.offset-5{margin-left:41.66%;}
+.offset-6{margin-left: 50%;}
+.offset-7{margin-left: 58.33%;}
+.offset-8{margin-left:66.66%}
+.offset-9{margin-left: 75%;}
+.offset-10{margin-left: 83.33%;}
+.offset-11{margin-left:91.66%;}
+.offset-12{margin-left: 100%;}
+
+.list-unstyled{
+    text-decoration: none;
+    list-style: none;
+}
+.clearfix{
+    clear: both;
+}
+
+nav{
+    background: #505050;
+    color: #fff;
+    height: 70px;
+    position: relative;
+    line-height: 70px;
+}
+
+
+main > section > .col-12{
+background:#f59000;
+color:#fff;
+height: auto;
+}
+.form-group{
+    padding-bottom: 15px;
+}
+.form-control{
+    min-width: 100%;
+    line-height: 34px;
+    padding: 6px 12px;
+    outline: 1px solid #ddd;
+    border-radius: 0px;
+}
+.btn{
+    line-height: 34px;
+    padding: 0px 15px;
+    outline-width: 0px;
+    border-width: 0px;
+    cursor: pointer;
+}
+.btn-danger{
+    background: red;
+    color:#fff;
+}
+.btn-success{
+    background: green;
+    color:#fff;
+}
+.btn-link{
+    background: transparent;
+    color:#170d6e;
+}
+.text-danger{
+    color:red;
+}
+.text-success{
+    color:green;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.pull-left{
+    float:left;
+}
+.pull-right{
+    float:right;
+}
+.ti-15{
+    text-indent: 15px;
+}
+.p-lr-10{
+    padding-left:10px;
+    padding-right: 10px;
+}
+.flex{
+    display: flex;
+}
+.active{
+    color:#505050!important;
+    font-weight: 800;
+}
+
+/*dashboard code*/
+.fix-dashboard{
+    background: red;
+    text-align: center;
+    line-height: 100px;
+    margin:10px;
+   -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.fix-dashboard:hover{
+    background:#505050;
+    cursor: pointer;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+/*end*/
+
+.pointer{
+    cursor: pointer;
+}
+
+
+/*panel code*/
+.panel{
+    padding:10px;    
+}
+.panel-heading{
+    background:#505050;
+    line-height: 34px;
+    color:#fff;
+    padding:15px;
+    border: 1px solid #505050;
+    text-indent: 0px;
+}
+.panel-body{
+    padding:15px;
+    background:#fff;
+    color:#505050;
+    padding-bottom: 15px;
+    border-left: 1px solid #505050;
+    border-right: 1px solid #505050;
+    border-bottom: 1px solid #505050;
+    text-indent: 0px;
+}
+/*end*/
+
+
+
+
+footer .col-12{
+    background: #505050;
+    color: white;
+    padding: 30px 0px 30px;
+    position: relative;
+    bottom: 0px;
+    height: auto;
+}
+footer .col-12 ul li a{
+    color:#fff;
+}
+footer .col-12 ul li a:hover{
+    color:#f59000;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
+@media screen and (min-width:980px) and (max-width:1170px){
+    .container{
+    width:92%;
+    margin:0 auto;
+    }
+}
+
+
+@media screen and (min-width:581px) and (max-width:980px){
+    .container{
+    width:92%;
+    margin:0 auto;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:580px){
+    .container{
+    width:92%;
+    margin:0 auto;
+    }
+    #mobile .col-3,#mobile .col-4,#mobile .col-8,#mobile .col-4{
+        width:100%;
+    }
+        #mobile .offset-3 {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        
+        #mobile .col-6 {
+            width: 90%;
+        }
+
+        #mobile .col-4{
+            padding-bottom: 15px;
+        }
+    
+}
